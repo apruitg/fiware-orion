@@ -168,8 +168,8 @@
 *
 * Values for URI parameters
 */
-#define DEFAULT_PAGINATION_LIMIT        "20"
-#define DEFAULT_PAGINATION_LIMIT_INT     20
+#define DEFAULT_PAGINATION_LIMIT        "200"
+#define DEFAULT_PAGINATION_LIMIT_INT     200
 
 
 

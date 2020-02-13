@@ -48,7 +48,7 @@ RUN \
     tar xfz v1.0.2.tar.gz && \
     mv rapidjson-1.0.2/include/rapidjson/ /usr/local/include && \
     # Install orion from source
-    git clone https://github.com/telefonicaid/fiware-orion && \
+    git clone https://github.com/apruitg/fiware-orion && \
     cd fiware-orion && \
     git checkout ${GIT_REV_ORION} && \
     make && \
