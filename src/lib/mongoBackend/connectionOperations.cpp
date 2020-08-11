@@ -446,9 +446,10 @@ bool collectionUpdate
                   doc.toString().c_str(),
                   FT(upsert)));
 
+  bool multi = true;
   try
   {
-    connection->update(col.c_str(), q, doc, upsert, FT(true));
+    connection->update(col.c_str(), q, doc, upsert, multi);
     releaseMongoConnection(connection);
     TIME_STAT_MONGO_WRITE_WAIT_STOP();
     LM_I(("Database Operation Successful (update: <%s, %s>)", q.toString().c_str(), doc.toString().c_str()));
