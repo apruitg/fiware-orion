@@ -3098,6 +3098,10 @@ static unsigned int updateEntity
       updatedEntity.append("$unset", toUnsetObj);
     }
 
+    //BSONObjBuilder multi;
+    //multi.append("multi", 1);
+    updatedEntity.append("$multi", 1);
+
     notifyCerP->entity.modDate = now;
   }
   else
