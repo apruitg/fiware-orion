@@ -3100,7 +3100,7 @@ static unsigned int updateEntity
 
     //BSONObjBuilder multi;
     //multi.append("multi", 1);
-    updatedEntity.append("$multi", 1);
+    updatedEntity.append("$multi", BSON(1));
 
     notifyCerP->entity.modDate = now;
   }
