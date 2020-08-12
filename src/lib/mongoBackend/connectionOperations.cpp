@@ -446,7 +446,6 @@ bool collectionUpdate
                   doc.toString().c_str(),
                   FT(upsert)));
 
-  bool multi = true;
   try
   {
     connection->update(col.c_str(), q, doc, upsert);
